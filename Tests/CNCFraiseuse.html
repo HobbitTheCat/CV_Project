@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CNC Fraiseuse</title>
+    <meta name="author" content="Semenov Egor">
+    <link rel="stylesheet" href="CNCFraiseuse.css">
+    <link rel="stylesheet" href="../CSS/Parts/scrollbar.css">
+    <link rel="stylesheet" href="../CSS/Parts/cards.css">
+</head>
+<body>
+<div class="head">
+    <h1>CNC FRAISEUSE</h1>
+</div>
+<div class="for_scroll">
+    <div id="part_2">
+
+        <nav>
+            <ul class="extra">
+                <li style="float: left"><a>About me</a></li>
+                <li id="test" style="float: left"><a>All Projects</a>
+                    <ul id="inner" class="extra">
+                        <li><a href="#">Project1</a></li>
+                        <li><a href="#">Project2</a></li>
+                        <li><a href="#">Project3</a></li>
+                    </ul>
+                </li>
+
+                <li style="float: left"><a>Galerie</a></li>
+                <li style="float:right"><a href="#">About</a></li>
+                <li style="float: right"><a>Contact</a></li>
+
+            </ul>
+        </nav>
+
+        <div class='text_fr' id="text_1">
+            <h2>Résumé</h2>
+            <p>
+                Un grand projet de création d'une fraiseuse à commande numérique en utilisant la technologie d'impression 3D.
+                En résultat, deux machines ont été assemblées et une expérience dans de nombreux domaines a été acquise,
+                tels que le développement conceptuel, la modélisation 3D, l'impression 3D, l'assemblage et la programmation.
+            </p>
+        </div>
+
+        <div class="center_img">
+            <div class="wrapper">
+                <div class="container">
+                    <input type="radio" name="slide" id="c1" checked>
+                    <label for="c1" class="card">
+                        <div class="row">
+                            <div class="icon">1</div>
+                            <div class="description">
+                                <h4>Winter</h4>
+                                <p>Winter has so much to offer -
+                                    creative activities</p>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="radio" name="slide" id="c2" >
+                    <label for="c2" class="card">
+                        <div class="row">
+                            <div class="icon">2</div>
+                            <div class="description">
+                                <h4>Digital Technology</h4>
+                                <p>Gets better every day -
+                                    stay tuned</p>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="radio" name="slide" id="c3" >
+                    <label for="c3" class="card">
+                        <div class="row">
+                            <div class="icon">3</div>
+                            <div class="description">
+                                <h4>Globalization</h4>
+                                <p>Help people all over the world</p>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="radio" name="slide" id="c4" >
+                    <label for="c4" class="card">
+                        <div class="row">
+                            <div class="icon">4</div>
+                            <div class="description">
+                                <h4>New technologies</h4>
+                                <p>Space engineering becomes
+                                    more and more advanced</p>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div class='text_fr' id="text_2"><h2>Histoire du développement</h2>
+                <p>
+                    Après l'acquisition d'une imprimante 3D, il est devenu possible de fabriquer des pièces avec une grande précision, ce qui a été décidé d'utiliser pour
+                    la fabrication des nœuds / pièces pour la création d'une fraiseuse à commande numérique. Un des nombreux projets similaires de machines provenant d'Internet
+                    a été choisi comme prototype. Cependant, toutes les pièces ont été conçues et fabriquées en interne. Initialement, étant donné que le projet n'avait pas de
+                    composante commerciale et était une exploration des possibilités, la conception de la machine a été choisie selon des critères de coût minimal.
+                    Il était clair que cela entraînerait une détérioration des caractéristiques de précision et de fiabilité.
+                </p>
+                <p>La première étape a été le développement de modèles 3D dans le logiciel Fusion 360. Il est important de noter que la conception des pièces s'est
+                    avérée être une tâche complexe, entraînant de nombreuses modifications et améliorations du prototype. Ensuite, est venu l'étape de la fabrication,
+                    suivie enfin de l'assemblage. Tout au long de ce processus, les défauts les plus inhabituels ont été découverts et corrigés, prévoir lesquels était impossible.
+                    C'était un travail très intéressant. Elle m'a inspiré à créer des projets ultérieurs auxquels j'ai appliqué les compétences et connaissances acquises.
+                </p>
+            </div>
+        </div>
+
+        <div class="text_img">
+            <div class='text_fr' id="text_3"><h2>Caractéristiques techniques</h2>
+                <h3>Mécanique</h3>
+                <p>
+                    Comme éléments de guidage linéaires, des profilés en aluminium extrudé de dimension 20 par 20 et 40 par 40 ont été choisis.
+                    Des roulements en caoutchouc de 22 mm de diamètre ont été sélectionnés pour le mouvement le long des rails.
+                </p>
+                <h3>Électronique</h3>
+                <p>
+                    Des moteurs pas à pas de type Nema 17 à entraînement direct sur des vis trapézoïdales de 8 mm de diamètre ont été choisis comme actionneurs actifs.
+                    Le contrôle de la fraiseuse se fait sur trois axes, l'axe Y étant contrôlé par deux moteurs Nema 17 synchronisés, l'axe X par un seul moteur Nema 17 et le chariot assurant le mouvement sur l'axe Z par un moteur Nema 17.
+                    La partie électronique est basée sur la plateforme Arduino UNO, avec une connexion de la partie puissance via CNC Shield, contrôlant les moteurs avec les clés de puissance 4988. Le programme de contrôle utilisé est le programme standard pour Arduino - GRBL.
+                    Une fraise manuelle de type Makita 9000 est utilisée comme broche. Comme la fraise fonctionne sur du courant de 220 volts, un relais de commande sans contact est utilisé pour contrôler la fraise.
+                </p>
+                <h3>Logiciels utilisés</h3>
+                <p>
+                    Après l'assemblage, le système était contrôlé à l'aide du logiciel libre Candle. La création des modèles 3D pour l'usinage sur la fraiseuse est effectuée dans le logiciel Fusion 360
+                </p>
+            </div>
+
+            <div id="img_container">
+                <img class="image" src="" alt="">
+                <img class="image" src="" alt="">
+                <img class="image" src="" alt="">
+                <img class="image" src="" alt="">
+            </div>
+        </div>
+
+        <div class='text_fr' id="text_4"><h2>Итоги</h2></div>
+        <div id="img_container1">
+            <img class="image1" src="" alt="">
+            <img class="image1" src="" alt="">
+            <img class="image1" src="" alt="">
+        </div>
+
+        <div class="contact">
+            <a href="#">Me contacter</a>
+            <a href="../HTML/InfoMain/Galerie.html#cnc_frais">D'autres photos</a>
+            <a class="round-button" href="#part_2">&#8594;</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

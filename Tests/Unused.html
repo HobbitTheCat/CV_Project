@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link rel="stylesheet" href="Unused.css">
+    <link rel="stylesheet" href="../CSS/Parts/scrollbar.css">
+    <link rel="stylesheet" href="../CSS/Parts/cards.css">
+</head>
+<body>
+<div class="head"><h1>ABOUT</h1></div>
+<div class="for_scroll">
+    <div id="part_2" class="theme-change">
+        <div class="row1">
+            <nav>
+                <ul class="extra" >
+                    <li class="theme-change left"><a>About me</a></li>
+                    <li class="theme-change left" id="test"><a>All Projects</a>
+                        <ul id="inner" class="extra theme-change">
+                            <li class="theme-change"><a href="#">Project1</a></li>
+                            <li class="theme-change"><a href="#">Project2</a></li>
+                            <li class="theme-change"><a href="#">Project3</a></li>
+                        </ul>
+                    </li>
+                    <li class="theme-change left"><a>Gallery</a></li>
+                    <li class="theme-change theme-changer right" onclick="activate()"></li>
+                    <li class="theme-change right" ><a href="#">About</a></li>
+                    <li class="theme-change right" ><a>Contact</a></li>
+                    <li class="theme-change" id="center"><p id="time"></p></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="row2">
+            <div class="text_fr" id="text_1">
+                <h2>Concept de site</h2>
+                <p>
+                    Ce site a été créé dans le cadre d'un projet final en informatique 1B.
+                    L'idée de ce site a germé au début de l'année scolaire, c'est à ce moment-là que j'ai choisi le sujet,
+                    car je voulais depuis longtemps récapituler mes projets et en faire une présentation.
+                    À ce moment-là, les premières ébauches de la page des projets ont été réalisées.
+                    À cette époque, je n'avais pas encore défini le design du site, donc j'expérimentais avec différents styles.
+                    Cette page présente l'histoire du site avec ses étapes clés,
+                    ainsi qu'une démonstration des éléments créés lors de la conception du site et qui n'ont pas été utilisés,
+                    et des plans pour leur mise en œuvre éventuelle dans le futur.
+                </p>
+            </div>
+        </div>
+
+        <div class="row3">
+            <div class="part_1">
+                <div class="window-to-the-site theme-change">
+                    <div class="title-bar theme-change">
+                        <div class="buttons">
+                            <div class="button"></div>
+                            <div class="button yellow"></div>
+                            <div class="button green"></div>
+                        </div>
+                    </div>
+                    <div class="content theme-change">
+                        <p>This is the content of your website.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="part_2">
+                <div class='text_fr theme-change' id="text_2">
+                    <h2></h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row4">
+            <div class="part_3">
+                <div class='text_fr theme-change' id="text_3">
+                    <h2></h2>
+                </div>
+            </div>
+
+            <div class="part_4">
+                <div id="img_container">
+                    <div class="image">
+                        <img class="image2" src="" alt="">
+                    </div>
+                    <div class="image">
+                        <img class="image2" src="" alt="">
+                    </div>
+                    <div class="image">
+                        <img class="image2" src="" alt="">
+                    </div>
+                    <div class="image">
+                        <img class="image2" src="" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row5">
+            <div class='text_fr theme-change' id="text_4">
+                <h2>Results</h2>
+            </div>
+        </div>
+
+        <div class="row6">
+            <div class="image">
+            </div>
+            <div class="image">
+            </div>
+            <div class="image">
+            </div>
+        </div>
+
+        <div class="row7">
+            <div class="contact">
+                <a href="#">Me contacter</a>
+                <a href="../HTML/InfoMain/Galerie.html#cnc_frais">D'autres photos</a>
+                <a class="round-button theme-change" href="#part_2">&#8594;</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="overlay">
+    <div class="overlay_content">
+        <button class="close" onclick="close_img()"><span>+</span></button>
+        <button class="close_bot" onclick="close_img()"></button>
+
+        <button class="next" onclick="next_img()">>></button>
+        <button class="prev" onclick="prev_img()"><<</button>
+        <img class = "overlay_img" src="" alt="">
+        <div class="counter"></div>
+    </div>
+</div>
+
+<script src="../JAVA/Galerie.js"></script>
+<script src="../JAVA/ThemeSwitch.js"></script>
+<script src="../JAVA/Time.js"></script>
+</body>
+</html>
