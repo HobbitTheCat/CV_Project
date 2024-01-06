@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Me contacter</title>
+    <meta name="author" content="Semenov Egor">
+    <link rel="stylesheet" href="../../CSS/Contact.css">
+    <link rel="stylesheet" href="../../CSS/Parts/scrollbar.css">
+</head>
+<body>
+    <div class="theme-change main-part" >
+        <div class="row1">
+            <nav>
+                <ul class="extra">
+                    <li class="theme-change left"><a href="../../Index.html">About me</a></li>
+                    <li class="theme-change left" id="test"><a >All Projects</a>
+                        <ul id="inner" class="extra theme-change">
+                            <li class="theme-change"><a href="#">Project1</a></li>
+                            <li class="theme-change"><a href="#">Project2</a></li>
+                            <li class="theme-change"><a href="#">Project3</a></li>
+                        </ul>
+                    </li>
+                    <li class="theme-change left"><a href="Galerie.html">Gallery</a></li>
+                    <li class="theme-change theme-changer right" onclick="activate()"></li>
+                    <li class="theme-change right" ><a href="About.html">About</a></li>
+                    <li class="theme-change right active" ><a href="#">Contact</a></li>
+                    <li class="theme-change" id="center"><p id="time"></p></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="row2">
+            <div class="part-left">
+                <div class="theme-change island  mail-container">
+                    <h2 id="lef-title">Envoyez - moi un email</h2>
+                    <form action="mailto:egor_semenov_00@bk.ru"
+                          method="POST"
+                          autocomplete="off"
+                          enctype="multipart/form-data"
+                          onsubmit="return validateForm()"
+                          name="EmailForm">
+                        <input type="text" class="theme-change form-control" id="name" placeholder="NAME" name="name" value="" required>
+                        <br>
+                        <input type="text" class="theme-change form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+                        <br>
+
+                        <textarea class="theme-change form-control" id="message" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+                        <br>
+                        <div id="centred-button">
+                            <button class="theme-change send-button" type="submit" value="Submit">Envoyer</button>
+                            <button class="theme-change send-button" id="supprimer" onclick="clearFields()">Supprimer</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="part-central">
+                <div class="theme-change island form-container">
+                    <h2>Options additionelles</h2>
+                </div>
+            </div>
+
+            <div class="part-right">
+                <div class="theme-change island contact-container">
+                    <h2>Contacts supplémentaires</h2>
+                    <div class="extra-contacts">
+                        <div class="contacts"><img class="icon" src="../../Res/placeholder.png" alt=""><p>Dijon, France</p></div>
+                        <div class="contacts"><img class="icon" src="../../Res/email.png" alt=""><p>egor_semenov_00@bk.ru</p></div>
+                        <hr>
+                        <div class="contacts">
+                            <a class="ancer-contact" href="https://t.me/+aYQ2MZ9DK7s4YTJi"><img class="icon_bott" src="../../Res/telegram.png" alt=""></a>
+                            <a class="ancer-contact" href="https://chat.whatsapp.com/IQZ1aOA4HizA7DOSqfq1QD"><img class="icon_bott" src="../../Res/whatsapp.png" alt=""></a>
+                            <a class="ancer-contact" href="https://discord.gg/V5JekpX8"><img onclick="" class="icon_bott" src="../../Res/discord.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="../../JAVA/Time.js"></script>
+    <script src="../../JAVA/ThemeSwitch.js"></script>
+    <script src="../../JAVA/FormVerification.js"></script>
+</body>
+</html>

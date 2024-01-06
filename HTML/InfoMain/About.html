@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link rel="stylesheet" href="../../CSS/About.css">
+    <link rel="stylesheet" href="../../CSS/Parts/scrollbar.css">
+
+    <link rel="stylesheet" href="../../CSS/AboutExtraContent/IslandMarkup.css">
+    <link rel="stylesheet" href="../../CSS/AboutExtraContent/SideScrolling.css">
+    <link rel="stylesheet" href="../../CSS/AboutExtraContent/SlidingElements.css">
+    <link rel="stylesheet" href="../../CSS/AboutExtraContent/ScrollingByStep.css">
+    <link rel="stylesheet" href="../../CSS/AboutExtraContent/Ovale.css">
+    <link rel="stylesheet" href="../../CSS/AboutExtraContent/Cards.css">
+</head>
+<body>
+
+    <div class="head"><h1>ABOUT</h1></div>
+
+    <div class="theme-change wrapper_content" id="#part_2">
+
+        <div class="box navigation">
+            <nav>
+                <ul class="extra" >
+                    <li class="left"><a href="../../Index.html">About me</a></li>
+                    <li class="left" id="test"><a href="SorryPage.html">All Projects</a>
+                        <ul id="inner" class="extra">
+                            <li><a href="../Projects/CNCfrais.html">CNC FRAISEUSE</a></li>
+                            <li><a href="../Projects/NTO.html">NTO</a></li>
+                        </ul>
+                    </li>
+                    <li class=" left"><a href="Galerie.html">Gallery</a></li>
+                    <li class="theme-changer right" onclick="activate()"></li>
+                    <li class="right active" ><a href="About.html">About</a></li>
+                    <li class="right" ><a href="Contact.html">Contact</a></li>
+                    <li  id="center"><time id="time"></time></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="box text">
+            <div class="text_fr" id="text_1">
+                <h2>Concept de site</h2>
+                <p>
+                    Ce site a été créé dans le cadre d'un projet final en informatique 1B.
+                    L'idée de ce site a germé au début de l'année scolaire, c'est à ce moment-là que j'ai choisi le sujet,
+                    car je voulais depuis longtemps récapituler mes projets et en faire une présentation.
+                    À ce moment-là, les premières ébauches de la page des projets ont été réalisées.
+                    À cette époque, je n'avais pas encore défini le design du site, donc j'expérimentais avec différents styles.
+                    Cette page présente l'histoire du site avec ses étapes clés,
+                    ainsi qu'une démonstration des éléments créés lors de la conception du site et qui n'ont pas été utilisés,
+                    et des plans pour leur mise en œuvre éventuelle dans le futur.
+                </p>
+            </div>
+        </div>
+
+        <div class="box box1">
+            <div class="window-to-the-site">
+                <div class="title-bar">
+                    <div class="buttons">
+                        <div class="button"></div>
+                        <div class="button yellow"></div>
+                        <div class="button green"></div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="global">
+                        <div class="outer_bounds"><div class="interactive" id="spec1"></div></div>
+                        <div class="outer_bounds"><div class="interactive"></div></div>
+                        <div class="outer_bounds"><div class="interactive"></div></div>
+                        <div class="outer_bounds"><div class="interactive"></div></div>
+                        <div class="outer_bounds"><div class="interactive" id="spec5"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box box2">
+            <div class="top-island text_fr" id="text_2">
+                <div class="top-island arrow"></div>
+
+                <p>Dans la fenêtre à gauche est présentée la première version de disposition des projets sous forme de tuiles.
+                </p>
+                <p>Cependant, par la suite, cette disposition a été abandonnée, car elle ne répondait pas aux conditions de scalabilité.</p>
+            </div>
+        </div>
+
+
+        <div class="box box3">
+            <div class="bottom_part">
+                <div class="part_top">
+                    <div class="bottom_island text_fr" id="text_island">
+                        <p>
+                            Voici le premier prototype d'une page défilante vers la droite.
+                            Avant son utilisation sur le site, il a été considérablement amélioré.
+                        </p>
+                    </div>
+
+                    <div class="window-to-the-site">
+                        <div class="title-bar">
+                            <div class="buttons">
+                                <div class="button"></div>
+                                <div class="button yellow"></div>
+                                <div class="button green"></div>
+                            </div>
+                        </div>
+                        <div class="content hide">
+                            <div class="horizontal-scroll-wrapper squares into_site">
+                                <div class="into_site">item 1</div>
+                                <div class="into_site">item 2</div>
+                                <div class="into_site">item 3</div>
+                                <div class="into_site">item 4</div>
+                                <div class="into_site">item 5</div>
+                                <div class="into_site">item 6</div>
+                                <div class="into_site">item 7</div>
+                                <div class="into_site">item 8</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="part_bottom">
+                    <div class="bottom_island text_fr" id="text_island_2">
+                        <p>Voici la version finale de la page défilante vers la droite.
+                            L'idée était de créer une page qui défile vers la droite lorsque
+                            vous faites défiler vers le bas. J'ai réussi à le faire.
+                        </p>
+                    </div>
+
+                    <div class="window-to-the-site">
+                        <div class="title-bar">
+                            <div class="buttons">
+                                <div class="button"></div>
+                                <div class="button yellow"></div>
+                                <div class="button green"></div>
+                            </div>
+                        </div>
+                        <div class="content hide">
+                            <div class="external_1">
+                                <div class="horizontal-scroll-wrapper_1">
+                                    <div class="wrapper_1">
+                                        <div class="frame_1"><div id="first_1"></div></div>
+                                        <div id="second_1"></div>
+                                        <div class="frame1_1"><div id="third_1"></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box box5">
+            <div class="top-island text_fr" id="text_3">
+                <h2>Choix de la palette de couleurs</h2>
+                <p>
+                    J'ai longtemps réfléchi à la palette de couleurs du site.
+                    Après un certain temps de recherche, j'ai trouvé une option qui me convient : GRUVBOX.
+                    <br>
+                    <a href="https://github.com/morhetz/gruvbox" id="normal_link">Voici la page officielle sur GitHub</a>.
+                </p>
+                <div class="img_gruvbox">
+                    <img id="gruvbox1" src="../../Res/light.png" alt="">
+                    <img id="gruvbox2" src="../../Res/dark.png" alt="">
+                </div>
+                <p id="about_color_text">
+                    Cependant, j'ai apporté les ajouts suivants :
+                    J'ai divisé toute la palette en 4 couches, ainsi que la couleur de la police, en deux thèmes : sombre et clair.
+                </p>
+                <div id="list_of_color">
+                    <ul class="main-list">
+                        <li>Thème sombre:
+                            <ul class="sub-list">
+                                <li><p>Mise en évidence spéciale</p>   <div id="dark-special-highlighting-color"></div></li>
+                                <li><p>Haut</p>                        <div id="dark-top-background-color"></div></li>
+                                <li><p>Normal</p>                      <div id="dark-background-color"></div></li>
+                                <li><p>Bas</p>                         <div id="dark-bottom-background-color"></div></li>
+                                <li><p>Police</p>                      <div id="dark-text-color"></div></li>
+                            </ul>
+                        </li>
+                        <li>Thème clair:
+                            <ul class="sub-list">
+                                <li><p>Mise en évidence spéciale</p>   <div id="special-highlighting-color"></div></li>
+                                <li><p>Haut</p>                        <div id="top-background-color"></div></li>
+                                <li><p>Normal</p>                      <div id="background-color"></div></li>
+                                <li><p>Bas</p>                         <div id="bottom-background-color"></div></li>
+                                <li><p>Police</p>                      <div id="text-color"></div></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="box box4">
+            <div class="top-island text_fr" id="text_4">
+                <p>J'utilise <code>position: sticky;</code> pour créer l'illusion de 'glissement' d'un élément sous un autre.</p>
+            </div>
+        </div>
+
+        <div class="box box6">
+            <div class="window-to-the-site">
+                <div class="title-bar">
+                    <div class="buttons">
+                        <div class="button"></div>
+                        <div class="button yellow"></div>
+                        <div class="button green"></div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div id="slide-wrapper">
+                        <div id="sliding-element"></div>
+                        <div id="top-element"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box box7">
+            <div class="top-island text_fr" id="text_5">
+                <p>Parfois, il est nécessaire de positionner l'utilisateur sur un site Web d'une manière spécifique.
+                </p><p>Pour ce faire, j'ai utilisé:<br> <code>scroll-snap-type: y mandatory; scroll-behavior: smooth;</code> et <br><code>scroll-snap-align: start; scroll-snap-stop: always;</code>
+                </p><p>Ce code m'a permis de créer un défilement du site par étapes, par exemple pour mettre en forme l'en-tête du site.
+                </p>
+            </div>
+        </div>
+
+        <div class="box box8">
+            <div class="window-to-the-site">
+                <div class="title-bar">
+                    <div class="buttons">
+                        <div class="button"></div>
+                        <div class="button yellow"></div>
+                        <div class="button green"></div>
+                    </div>
+                </div>
+                <div class="content" id="scrolling-dy-step-wrapper">
+                    <div id="scrolling-dy-step-main">
+                        <div id="step1">Step 1</div>
+                        <div id="step2">Step 2</div>
+                        <div id="step3">Step 3</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="box box9">
+            <h2 id="special-size">Idées non réalisées</h2>
+            <div class="text_fr" id="text_6">
+                <p>Sur cette partie de la page, j'ai rassemblé plusieurs éléments auxquels j'ai pensé pendant le développement,
+                    mais je n'ai pas trouvé d'endroit où je pourrais les appliquer.
+                </p>
+            </div>
+        </div>
+
+        <div class="box box10">
+            <div class="text_fr" id="text_7">
+                <p>Ce ovale tournant, je l'ai trouvé et amélioré en début du projet. Je n'avais pas de concept précis pour le site, et depuis, je n'ai jamais eu l'occasion de l'utiliser.</p>
+            </div>
+        </div>
+
+        <div class="box box11">
+            <div class="window-to-the-site">
+                <div class="title-bar">
+                    <div class="buttons">
+                        <div class="button"></div>
+                        <div class="button yellow"></div>
+                        <div class="button green"></div>
+                    </div>
+                </div>
+                <div class="content"  id="ovale">
+                    <div id="blob"></div>
+                    <div id="blur"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box box12">
+            <div class="text_fr" id="text_8">
+                <p> Quant à cet effet, je pensais l'appliquer aux cartes avec des photos sur les pages des projets, mais j'ai conclu que cela serait superflu</p>
+            </div>
+        </div>
+
+        <div class="box box13">
+            <div class="window-to-the-site">
+                <div class="title-bar">
+                    <div class="buttons">
+                        <div class="button"></div>
+                        <div class="button yellow"></div>
+                        <div class="button green"></div>
+                    </div>
+                </div>
+                <div class="content center hide">
+                    <div class="tilt">
+                        <div class="tilt__content">
+                            <div id="mountain-image"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box box135">
+            <div class="text_fr" id="text_9">
+                <h2>Special Thanks</h2>
+                <p>à Alice pour les icônes des projets et l'aide à la conception du site</p>
+                <p>à Pasha pour la vérification</p>
+                <p>à Grand-père Sasha pour tout</p>
+            </div>
+        </div>
+
+        <div class="box box14">
+            <div class="contact">
+                <a class="not-normal-link" href="Contact.html">Me contacter</a>
+                <a class="not-normal-link" href="Galerie.html">D'autres photos</a>
+                <a class="round-button theme-change" href="##part_2">&#8594;</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../../JAVA/ThemeSwitch.js"></script>
+    <script src="../../JAVA/Time.js"></script>
+    <script src="../../JAVA/Ovale.js"></script>
+    <script src="../../JAVA/Card.js"></script>
+</body>
+</html>

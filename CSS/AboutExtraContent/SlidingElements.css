@@ -1,0 +1,21 @@
+#slide-wrapper{
+    height: 200%;
+    background-color: #ccaabb;
+}
+
+#sliding-element{
+    position: sticky;
+
+    z-index: 0;
+    top: -10px;
+    background-color: #ff5f57;
+    height: 200px;
+}
+
+#top-element{
+    z-index: 1;
+
+    position: relative;
+    background-color: #28c941EA;
+    height: 300px;
+}

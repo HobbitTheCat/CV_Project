@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../CSS/Projects/Model.css">
+    <link rel="stylesheet" href="../../CSS/Parts/scrollbar.css">
+    <link rel="stylesheet" href="../../CSS/Parts/cards.css">
+    <title>Масштабируемый интерфейс</title>
+</head>
+<body>
+    <div class="head"></div>
+    <div class="for_scroll">
+        <div id="part_2" class="theme-change">
+            <div class="row1">
+                <nav>
+                    <ul class="extra" >
+                        <li class="theme-change left"><a>About me</a></li>
+                        <li class="theme-change left" id="test"><a>All Projects</a>
+                            <ul id="inner" class="extra theme-change">
+                                <li class="theme-change"><a href="#">Project1</a></li>
+                                <li class="theme-change"><a href="#">Project2</a></li>
+                                <li class="theme-change"><a href="#">Project3</a></li>
+                            </ul>
+                        </li>
+                        <li class="theme-change left"><a>Galerie</a></li>
+                        <li class="theme-change theme-changer right" onclick="activate()"></li>
+                        <li class="theme-change right" ><a href="#">About</a></li>
+                        <li class="theme-change right" ><a>Contact</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="row2">
+                <div class="text_fr" id="text_1">
+                    <h2>Résumé</h2>
+                    <p>
+                        Un grand projet de création d'une fraiseuse à commande numérique en utilisant la technologie d'impression 3D.
+                        En résultat, deux machines ont été assemblées et une expérience dans de nombreux domaines a été acquise,
+                        tels que le développement conceptuel, la modélisation 3D, l'impression 3D, l'assemblage et la programmation.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row3">
+                <div>
+                    <div class="wrapper">
+                        <div class="container">
+                            <input type="radio" name="slide" id="c1" checked>
+                            <label for="c1" class="card">
+                                <div class="row">
+                                    <div class="icon">1</div>
+                                    <div class="description">
+                                        <h4>Winter</h4>
+                                        <p>Winter has so much to offer -
+                                            creative activities</p>
+                                    </div>
+                                </div>
+                            </label>
+                            <input type="radio" name="slide" id="c2" >
+                            <label for="c2" class="card">
+                                <div class="row">
+                                    <div class="icon">2</div>
+                                    <div class="description">
+                                        <h4>Digital Technology</h4>
+                                        <p>Gets better every day -
+                                            stay tuned</p>
+                                    </div>
+                                </div>
+                            </label>
+                            <input type="radio" name="slide" id="c3" >
+                            <label for="c3" class="card">
+                                <div class="row">
+                                    <div class="icon">3</div>
+                                    <div class="description">
+                                        <h4>Globalization</h4>
+                                        <p>Help people all over the world</p>
+                                    </div>
+                                </div>
+                            </label>
+                            <input type="radio" name="slide" id="c4" >
+                            <label for="c4" class="card">
+                                <div class="row">
+                                    <div class="icon">4</div>
+                                    <div class="description">
+                                        <h4>New technologies</h4>
+                                        <p>Space engineering becomes
+                                            more and more advanced</p>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="part_2">
+                    <div class='text_fr theme-change' id="text_2">
+                        <h2></h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row4">
+                <div class="part_3">
+                    <div class='text_fr theme-change' id="text_3">
+                        <h2></h2>
+                    </div>
+                </div>
+
+                <div class="part_4">
+                    <div id="img_container">
+                        <div class="image">
+                            <img class="image2" src="" alt="">
+                        </div>
+                        <div class="image">
+                            <img class="image2" src="" alt="">
+                        </div>
+                        <div class="image">
+                            <img class="image2" src="" alt="">
+                        </div>
+                        <div class="image">
+                            <img class="image2" src="" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row5">
+                <div class='text_fr theme-change' id="text_4">
+                    <h2>Results</h2>
+                </div>
+            </div>
+
+            <div class="row6">
+                <div class="image">
+                    <img class="image1" src="" alt="">
+                </div>
+                <div class="image">
+                    <img class="image1" src="" alt="">
+                </div>
+                <div class="image">
+                    <img class="image1" src="" alt="">
+                </div>
+            </div>
+
+            <div class="row7">
+                <div class="contact">
+                    <a href="#">Me contacter</a>
+                    <a href="../InfoMain/Galerie.html#cnc_frais">D'autres photos</a>
+                    <a class="round-button theme-change" href="#part_2">&#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay">
+        <div class="overlay_content">
+            <button class="close" onclick="close_img()"><span>+</span></button>
+            <button class="close_bot" onclick="close_img()"></button>
+
+            <button class="next" onclick="next_img()">>></button>
+            <button class="prev" onclick="prev_img()"><<</button>
+            <img class = "overlay_img" src="" alt="">
+            <div class="counter"></div>
+        </div>
+    </div>
+
+    <script src="../../JAVA/Galerie.js"></script>
+    <script src="../../JAVA/ThemeSwitch.js"></script>
+</body>
+</html>

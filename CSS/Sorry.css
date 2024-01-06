@@ -1,0 +1,244 @@
+@font-face {
+    font-family: "Chakra";
+    src: url("../Res/ChakraPetchRegular.ttf");
+}
+
+:root {
+    /*dark*/
+    --dark-special-highlighting-color: #3c3836;
+
+    --dark-top-background-color: #303030;
+    --dark-background-color: #282828;
+    --dark-bottom-background-color: #1d2021;
+
+    --dark-text-color: #ebdbb2;
+
+    /*light*/
+    --special-highlighting-color: white;
+
+    --top-background-color:  #ffffff;
+    --background-color:  #e1e2e6;
+    --bottom-background-color: #bcbdbe;
+
+    --text-color: #3c3836;
+
+    /*special*/
+    --text-hover-color: #D65D0E;
+}
+
+/*Main background color*/
+.wrapper_content.theme-light{
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+.theme-dark.wrapper_content{
+    background-color: var(--dark-background-color);
+    color: var(--dark-text-color);
+}
+
+
+/*Top menu*/
+.theme-light nav li:hover{
+    background-color: var(--special-highlighting-color);
+}
+.theme-dark nav li:hover{
+    background-color: var(--dark-special-highlighting-color);
+}
+#center:hover{
+    background: none;
+}
+.theme-light a{
+    color: var(--text-color);
+}
+.theme-dark a{
+    color: var(--dark-text-color);
+}
+
+
+@media (prefers-color-scheme: dark) {
+    /*Main background color*/
+    .theme-auto.wrapper_content{
+        background-color: var(--dark-background-color);
+        color: var(--dark-text-color);
+    }
+
+    /*Top menu*/
+    .theme-auto nav li:hover{
+        background-color: var(--dark-special-highlighting-color);
+    }
+    #center:hover{
+        background: none;
+    }
+    .theme-auto a {
+        color: var(--dark-text-color);
+    }
+}
+
+/*font*//*font*//*font*//*font*//*font*//*font*//*font*//*font*//*font*//*font*/
+
+h1{
+    font-size: 120px;
+    text-align: center;
+}
+p{
+    font-size: 25px;
+}
+
+/*content*//*content*//*content*//*content*//*content*//*content*//*content*//*content*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Chakra, serif;
+}
+body{
+ overflow: hidden;
+}
+
+.wrapper_content{
+    margin-top: -2px;
+    height: 110vh;
+    width: 100%;
+}
+
+
+.music{
+    margin-top: 100px;
+
+    width: 100%;
+    height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+audio{
+    margin-top: 20px;
+}
+
+img{
+    height: 400px;
+}
+
+/*Navigation*/ /*Navigation*/ /*Navigation*/ /*Navigation*/ /*Navigation*/ /*Navigation*/
+
+nav{
+    margin-top: 2px;
+    height: 50px;
+}
+
+.extra {
+    height: 50px;
+    position: sticky;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    border-radius: 8px;
+}
+
+li{
+    transition-duration: 0.4s;
+    border-radius: 8px;
+}
+
+#inner{
+    height: 0;
+    display: none;
+}
+
+li:hover{
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+
+#center{
+    margin-left: 47.3%;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100px;
+    cursor: default;
+}
+#test{
+    width: 150px;
+}
+#time{
+    margin-left: -6px;
+    width: 100%;
+}
+
+#test:hover #inner{
+    display: inherit;
+}
+#inner:hover{
+    display: inherit;
+}
+.active{
+    background-color: #D65D0E;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 10px;
+}
+
+a:hover{
+    color: #D65D0E;
+}
+
+.theme-changer{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+
+    height: 50px;
+    width: 50px;
+}
+
+.round-button {
+    position: absolute;
+
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    transform: rotate(-90deg);
+    transition-duration: 0.5s;
+
+    right: 15px;
+    box-shadow: 0 10px 30px -5px rgba(0,0,0,0.8);
+
+    display: inline-block;
+    line-height: 60px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.round-button:hover {
+    transform: translateY(-4px) rotate(-90deg);
+    background-color: #D65D0E;
+    color: #f9f5d7;
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../CSS/Projects/Model.css">
+    <link rel="stylesheet" href="../../CSS/Parts/scrollbar.css">
+    <link rel="stylesheet" href="../../CSS/Parts/cards.css">
+    <link rel="stylesheet" href="../../CSS/Projects/CNCFraiseuse.css">
+    <title>CNC Fraiseuse</title>
+
+    <meta name="author" content="Semenov Egor">
+</head>
+<body>
+<div class="head">
+    <h1>CNC FRAISEUSE</h1>
+    <div class="center_head_img">
+        <img class="head_img" src="../../Res/CNCModel.png" alt="">
+    </div>
+</div>
+<div class="for_scroll">
+    <div id="part_2" class="theme-change">
+        <div class="row1">
+            <nav>
+                <ul class="extra" >
+                    <li class="theme-change left"><a href="../../Index.html">About me</a></li>
+                    <li class="left" id="test"><a href="../InfoMain/SorryPage.html">All Projects</a>
+                        <ul id="inner" class="extra">
+                            <li><a href="CNCfrais.html">CNC Fraiseuse</a></li>
+                            <li><a href="NTO.html">NTO</a></li>
+                        </ul>
+                    </li>
+                    <li class="theme-change left"><a href="../InfoMain/Galerie.html">Gallery</a></li>
+                    <li class="theme-change theme-changer right" onclick="activate()"></li>
+                    <li class="theme-change right" ><a href="../InfoMain/About.html">About</a></li>
+                    <li class="theme-change right" ><a href="../InfoMain/Contact.html">Contact</a></li>
+                    <li class="theme-change" id="center"><p id="time"></p></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="row2">
+            <div class="text_fr" id="text_1">
+                <h2>Résumé</h2>
+                <p>
+                    Un grand projet de création d'une fraiseuse à commande numérique en utilisant la technologie d'impression 3D.
+                    En résultat, deux machines ont été assemblées et une expérience dans de nombreux domaines a été acquise,
+                    tels que le développement conceptuel, la modélisation 3D, l'impression 3D, l'assemblage et la programmation.
+                </p>
+            </div>
+        </div>
+
+        <div class="row3">
+            <div>
+                <div class="wrapper">
+                    <div class="container">
+                        <input type="radio" name="slide" id="c1" checked>
+                        <label for="c1" class="card">
+                            <div class="row">
+                                <div class="icon">1</div>
+                                <div class="description">
+                                    <h4>Première version du modèle 3D</h4>
+                                    <p class="card-text">Inspiré de projets trouvés sur Internet</p>
+                                </div>
+                            </div>
+                        </label>
+                        <input type="radio" name="slide" id="c2" >
+                        <label for="c2" class="card">
+                            <div class="row">
+                                <div class="icon">2</div>
+                                <div class="description">
+                                    <h4>Premier prototype opérationnel</h4>
+                                    <p class="card-text">Assemblé 3 mois après le début du projet</p>
+                                </div>
+                            </div>
+                        </label>
+                        <input type="radio" name="slide" id="c3" >
+                        <label for="c3" class="card">
+                            <div class="row">
+                                <div class="icon">3</div>
+                                <div class="description">
+                                    <h4 class="white">Version actuelle</h4>
+                                    <p class="card-text1">De nombreuses améliorations ont été apportées</p>
+                                </div>
+                            </div>
+                        </label>
+                        <input type="radio" name="slide" id="c4" >
+                        <label for="c4" class="card">
+                            <div class="row">
+                                <div class="icon">4</div>
+                                <div class="description">
+                                    <h4>Développement en cours</h4>
+                                    <p class="card-text">Passage aux connexions métalliques</p>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="part_2">
+                <div class='text_fr theme-change' id="text_2">
+                    <h2>Histoire du développement</h2>
+                    <p>
+                        Après l'acquisition d'une imprimante 3D, il est devenu possible de fabriquer des pièces avec une grande précision, ce qui a été décidé d'utiliser pour
+                        la fabrication des nœuds / pièces pour la création d'une fraiseuse à commande numérique. Un des nombreux projets similaires de machines provenant d'Internet
+                        a été choisi comme prototype. Cependant, toutes les pièces ont été conçues et fabriquées en interne. Initialement, étant donné que le projet n'avait pas de
+                        composante commerciale et était une exploration des possibilités, la conception de la machine a été choisie selon des critères de coût minimal.
+                        Il était clair que cela entraînerait une détérioration des caractéristiques de précision et de fiabilité.
+                    </p>
+                    <p>La première étape a été le développement de modèles 3D dans le logiciel Fusion 360. Il est important de noter que la conception des pièces s'est
+                        avérée être une tâche complexe, entraînant de nombreuses modifications et améliorations du prototype. Ensuite, est venu l'étape de la fabrication,
+                        suivie enfin de l'assemblage. Tout au long de ce processus, les défauts les plus inhabituels ont été découverts et corrigés, prévoir lesquels était impossible.
+                        C'était un travail très intéressant. Elle m'a inspiré à créer des projets ultérieurs auxquels j'ai appliqué les compétences et connaissances acquises.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row4">
+            <div class="part_3">
+                <div class='text_fr theme-change' id="text_3">
+                    <h2>Caractéristiques techniques</h2>
+                    <h3>Mécanique</h3>
+                    <p>
+                        Comme éléments de guidage linéaires, des profilés en aluminium extrudé de dimension 20 par 20 et 40 par 40 ont été choisis.
+                        Des roulements en caoutchouc de 22 mm de diamètre ont été sélectionnés pour le mouvement le long des rails.
+                    </p>
+                    <h3>Électronique</h3>
+                    <p>
+                        Des moteurs pas à pas de type Nema 17 à entraînement direct sur des vis trapézoïdales de 8 mm de diamètre ont été choisis comme actionneurs actifs.
+                        Le contrôle de la fraiseuse se fait sur trois axes, l'axe Y étant contrôlé par deux moteurs Nema 17 synchronisés, l'axe X par un seul moteur Nema 17 et le chariot assurant le mouvement sur l'axe Z par un moteur Nema 17.
+                        La partie électronique est basée sur la plateforme Arduino UNO, avec une connexion de la partie puissance via CNC Shield, contrôlant les moteurs avec les clés de puissance 4988. Le programme de contrôle utilisé est le programme standard pour Arduino - GRBL.
+                        Une fraise manuelle de type Makita 9000 est utilisée comme broche. Comme la fraise fonctionne sur du courant de 220 volts, un relais de commande sans contact est utilisé pour contrôler la fraise.
+                    </p>
+                    <h3>Logiciels utilisés</h3>
+                    <p>
+                        Après l'assemblage, le système était contrôlé à l'aide du logiciel libre Candle. La création des modèles 3D pour l'usinage sur la fraiseuse est effectuée dans le logiciel Fusion 360
+                    </p>
+                </div>
+            </div>
+
+            <div class="part_4">
+                <div id="img_container">
+                    <div class="image">
+                        <img class="image2" src="../../Res/ALLPROF.jpg" alt="">
+                    </div>
+                    <div class="image">
+                        <img class="image2" src="../../Res/NEMA17.jpg" alt="">
+                    </div>
+                    <div class="image">
+                        <img class="image2" src="../../Res/Arduino.jpg" alt="">
+                    </div>
+                    <div class="image">
+                        <img class="image2" src="../../Img/FraiseuseCNC/CNCElectr.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row5">
+            <div class='text_fr theme-change' id="text_4">
+                <h2>Résultats</h2>
+                <p>
+                    J'ai réussi à mettre en œuvre deux fraiseuses à commande numérique (CNC). Au cours de leur développement,
+                    j'ai acquis des connaissances dans le domaine de la modélisation 3D, de la conception de projets,
+                    de l'utilisation d'une imprimante 3D, du fonctionnement des machines CNC et de leurs logiciels.
+                    Cette expérience de développement a été très enrichissante pour moi, car j'avais depuis longtemps
+                    l'envie de me lancer dans la réalisation de projets à grande échelle, et je pense avoir réussi
+                    à atteindre les résultats souhaités. De plus, ce projet a été le point de départ pour la réalisation
+                    d'une imprimante 3D imprimé basée sur l'expérience acquise dans ce projet.</p>
+            </div>
+        </div>
+
+        <div class="row6">
+            <div class="image">
+                <img class="image1" src="../../Img/FraiseuseCNC/CNCFRAIS4.jpg" alt="">
+            </div>
+            <div class="image">
+                <img class="image1" src="../../Img/FraiseuseCNC/CNCFRAIS10.jpg" alt="">
+            </div>
+            <div class="image">
+                <img class="image1" src="../../Img/FraiseuseCNC/CNCFRAIS8.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="row7">
+            <div class="contact">
+                <a href="../InfoMain/Contact.html">Me contacter</a>
+                <a href="../InfoMain/Galerie.html#cnc_frais">D'autres photos</a>
+                <a class="round-button theme-change" href="#part_2">&#8594;</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="overlay">
+    <div class="overlay_content">
+        <button class="close" onclick="close_img()"><span>+</span></button>
+        <button class="close_bot" onclick="close_img()"></button>
+
+        <button class="next" onclick="next_img()">>></button>
+        <button class="prev" onclick="prev_img()"><<</button>
+        <img class = "overlay_img" src="" alt="">
+        <div class="counter"></div>
+    </div>
+</div>
+
+<script src="../../JAVA/Galerie.js"></script>
+<script src="../../JAVA/ThemeSwitch.js"></script>
+<script src="../../JAVA/Time.js"></script>
+</body>
+</html>

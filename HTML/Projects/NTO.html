@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Semenov Egor">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../CSS/Projects/NTO.css">
+    <link rel="stylesheet" href="../../CSS/Parts/scrollbar.css">
+</head>
+<body>
+
+
+    <div class="the_first_quarter">
+        <div id="blob"></div>
+        <div id="blur"></div>
+
+        <div class="inner_first">
+            <h1 data-value="NTO">NTO</h1>
+        </div>
+    </div>
+
+<div class="global_test theme-change" id="part_2">
+
+    <nav>
+        <ul class="extra" >
+            <li class="left"><a href="../../Index.html">About me</a></li>
+            <li class="left" id="test"><a href="../InfoMain/SorryPage.html">All Projects</a>
+                <ul id="inner" class="extra">
+                    <li><a href="../Projects/CNCfrais.html">CNC FRAISEUSE</a></li>
+                    <li><a href="#">NTO</a></li>
+                </ul>
+            </li>
+            <li class=" left"><a href="../InfoMain/Galerie.html">Gallery</a></li>
+            <li class="theme-changer right" onclick="activate()"></li>
+            <li class="right" ><a href="../InfoMain/About.html">About</a></li>
+            <li class="right" ><a href="../InfoMain/Contact.html">Contact</a></li>
+            <li  id="center"><time id="time"></time></li>
+        </ul>
+    </nav>
+
+    <div class="bound">
+        <div class="outer_filter">
+            <div class="the_second_quarter">
+                <div class="inner_second">
+                    <div id="img_second_left"></div>
+                    <div id="text_second_left">
+                        <div class="text_fr" id="text_1">
+                            <h2>INFO</h2>
+                            <p>В одиннадцатом классе мне предложили сформировать команду и участвовать в Национальной Технологической Олимпиаде (НТО). В нашей команде были инженер-схемотехник и два программиста, а я выполнял роль инженера-конструктора. Мы выбрали профиль "Передовые Производственные технологии" и провели мероприятия по укреплению команды.
+
+                                Олимпиада состояла из трех этапов:
+
+                                Предметный тур: Включал в себя теоретические задачи по физике, математике и информатике.
+
+                                Проверка и развитие необходимых компетенций: Задания были более интересными, такими как обучение использованию робота Kawasaki, разработка робо-захвата, задачи по компьютерному зрению.
+
+                                Финал: Предполагал реализацию проекта из второго этапа с использованием 3D-печати и современных технологий производства.
+
+                                На первом этапе команда успешно прошла, объединив усилия и распределив задачи. Во втором этапе я занимался проектированием захвата, поддерживал команду и решал задачи по физике и информатике. Мы успешно выполнели большинство заданий.
+
+                                Мои навыки работы со станками пригодились, но возникли проблемы с измерением распределения нагрузки деталей и временем изготовления, что помешало нам пройти в финал.
+
+                                В следующем году меня позвали обучать следующую команду для НТО, и мне удалось подготовить их успешно пройти первый этап.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div id="img_second_bottom" ></div>
+                    <div id="img_second_upper">
+                        <div class="tilt">
+                            <div class="tilt__content">
+                                <img src="../../Res/NTO.PNG" alt="NTO">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="img_second_lower">
+                        <div class="tilt">
+                            <div class="tilt__content">
+                                <img id = "pravo" src="../../Res/test.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="img_second_upper_right"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="the_third_quarter">
+        <div id="image">
+        </div>
+            <div class="inner_third">
+                <div id="img_third_left"></div>
+                <div id="text_third_center"></div>
+                <div id="img_third_right">
+                    <div class="wrapper">
+                        <div class="container">
+                            <input type="radio" name="slide" id="c1" checked>
+                            <label for="c1" class="card">
+                                <div class="row">
+                                    <div class="icon"></div>
+                                    <div class="description">
+                                    </div>
+                                </div>
+                            </label>
+                            <input type="radio" name="slide" id="c2" >
+                            <label for="c2" class="card">
+                                <div class="row">
+                                    <div class="icon"></div>
+                                    <div class="description">
+                                    </div>
+                                </div>
+                            </label>
+                            <input type="radio" name="slide" id="c3" >
+                            <label for="c3" class="card">
+                                <div class="row">
+                                    <div class="icon"></div>
+                                    <div class="description">
+                                    </div>
+                                </div>
+                            </label>
+                            <input type="radio" name="slide" id="c4" >
+                            <label for="c4" class="card">
+                                <div class="row">
+                                    <div class="icon"></div>
+                                    <div class="description">
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="outer_filter_1">
+        <div class="the_fourth_quarter">
+            <div class="inner_fourth"></div>
+
+            <div class="contact">
+                <a class="not-normal-link" href="../InfoMain/Contact.html">Me contacter</a>
+                <a class="not-normal-link" href="../InfoMain/Galerie.html">D'autres photos</a>
+                <a class="round-button theme-change" href="#part_2">&#8594;</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../../JAVA/NTO.js"></script>
+<script src="../../JAVA/ThemeSwitch.js"></script>
+<script src="../../JAVA/Time.js"></script>
+</body>
+</html>

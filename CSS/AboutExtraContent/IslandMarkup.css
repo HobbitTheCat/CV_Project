@@ -1,0 +1,84 @@
+.outer_bounds {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.global{
+    height: 98%;
+    width: 98%;
+}
+
+.outer_bounds:nth-child(1) {
+    width: 300px;
+    height: 150px;
+
+    margin-left: 92px;
+    margin-top: 95px;
+}
+
+.outer_bounds:nth-child(2) {
+    width: 150px;
+    height: 150px;
+
+    margin-left: 392px;
+    margin-top: 95px;
+}
+
+.outer_bounds:nth-child(3) {
+    width: 150px;
+    height: 300px;
+
+    margin-left: 542px;
+    margin-top: 95px;
+}
+
+.outer_bounds:nth-child(4) {
+    width: 150px;
+    height: 150px;
+
+    margin-left: 92px;
+    margin-top: 245px;
+}
+
+.outer_bounds:nth-child(5) {
+    width: 300px;
+    height: 150px;
+
+    margin-left: 242px;
+    margin-top: 245px;
+
+}
+
+.interactive {
+    border-radius: 5px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    left: 5px;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+
+    cursor: pointer;
+    transition: background-size 400ms ease, opacity 400ms ease;
+    background-image: url("../../Res/mountains.jpg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    opacity: 0.8;
+}
+#spec1, #spec5{
+    background-size: 100% auto;
+}
+
+.interactive:hover{
+    background-size: auto 110%;
+    opacity: 1.0;
+}
+
+#spec1:hover, #spec5:hover{
+    background-size: 110% auto;
+    opacity: 1.0;
+}

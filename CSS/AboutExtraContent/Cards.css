@@ -1,0 +1,24 @@
+.tilt{
+    height: 400px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tilt__content{
+    height: 300px;
+    width: 300px;
+
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#mountain-image{
+    height: 300px;
+    width: 300px;
+
+    background-image: url("../../Res/mountains.jpg");
+    background-position: center;
+    background-size: cover;
+}

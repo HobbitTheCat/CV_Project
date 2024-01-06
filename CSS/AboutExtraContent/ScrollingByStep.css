@@ -1,0 +1,33 @@
+#scrolling-dy-step-wrapper{
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+#scrolling-dy-step-main{
+    height: 1540px;
+}
+
+#step1, #step2, #step3{
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 60px;
+}
+
+#step1{
+    background-color: white;
+    height: 520px;
+
+}
+#step2{
+    height: 520px;
+    background-color: black;
+}
+#step3{
+    background-color: white;
+    height: 510px;
+}

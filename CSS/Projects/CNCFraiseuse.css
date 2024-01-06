@@ -1,0 +1,30 @@
+.card[for="c1"] {
+    background-image: url("../../Res/CNCOld1.png");
+    background-position: -80px 70px;
+    background-size: 750px;
+}
+
+h4, .card-text{
+    color: black;
+}
+.white, .card-text1{
+    color: #fbf1c7;
+}
+
+.card[for="c2"] {
+    background-image: url("../../Res/FIRSTVER.jpeg");
+    background-size: 600px;
+
+    color: var(--dark-text-color);
+}
+.card[for="c3"] {
+    background-image: url("../../Img/FraiseuseCNC/CNCFRAIS17.jpg");
+    background-size: 980px;
+    background-position: -200px;
+
+}
+.card[for="c4"] {
+    background-image: url("../../Res/CNCModel1.png");
+    background-size: 850px;
+    background-position: -125px 100px;
+}
